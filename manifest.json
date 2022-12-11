@@ -1,0 +1,25 @@
+{
+	"name": "Quizlet Match Hack",
+	"description": "hahahah cheat in quizlet! Bus game funni",
+	"author": "roady",
+	"manifest_version": 2,
+	"version": "1.0",
+	"browser_action": {
+		"default_title": "Quizlet Match Hack (pls no remove)",
+		"default_popup": "index.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://quizlet.com/*/match"],
+			"run_at": "document_end",
+			"js": ["Injection.js"],
+			"all_frames": true
+		}
+	],
+	"icons": {
+		"16": "imgs/icon16.png",
+		"48": "imgs/icon48.png",
+		"128": "imgs/icon128.png"
+	},
+	"permissions": ["storage"]
+}
